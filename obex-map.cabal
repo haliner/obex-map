@@ -1,0 +1,31 @@
+name:                obex-map
+version:             0.1.0.0
+license:             MIT
+license-file:        LICENSE
+author:              Stefan Haller
+maintainer:          haliner@gmail.com
+copyright:           (c) 2014 Stefan Haller
+category:            Network
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+    exposed-modules:
+        Obex.MessageAccess
+        Obex.MessageAccess.Internal
+
+    build-depends:
+        base         >= 4.6,
+        containers   >= 0.5,
+        data-default >= 0.5,
+        dbus         >= 0.10,
+        text         >= 0.11,
+        time         >= 1.4
+
+    hs-source-dirs:
+        lib
+
+    default-language:
+        Haskell2010
+
+-- vim: set ts=4 sts=4 sw=4 et:
